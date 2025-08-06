@@ -4,7 +4,7 @@ import cdsapi
 dataset = "derived-era5-pressure-levels-daily-statistics"
 request = {
     "product_type": "reanalysis",
-    "variable": ["temperature" "specific_cloud_liquid_water_content"],
+    "variable": ["specific_cloud_liquid_water_content"],
     "year": "1988",
     "month": [
         "01", "02", "03",
@@ -12,6 +12,7 @@ request = {
         "07", "08", "09",
         "10", "11", "12"
     ],
+    "data_format": "netcdf",
     "day": [
         "01", "02", "03",
         "04", "05", "06",
@@ -29,11 +30,11 @@ request = {
     "daily_statistic": "daily_mean",
     "time_zone": "utc+00:00",
     "frequency": "6_hourly",
-    "area": [50, -126, 24, -65]
+    "area": [50, -126, 24, -65],
 }
 
 # output file name
-filename = "rough_CONUS_precipitation_temperature_1988.nc" 
+filename = "rough_CONUS_precipitation_clwc_1988.nc" 
 
 # initialize client, fetch dataset
 client = cdsapi.Client()
