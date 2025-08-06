@@ -4,7 +4,7 @@ import cdsapi
 dataset = "derived-era5-pressure-levels-daily-statistics"
 request = {
     "product_type": "reanalysis",
-    "variable": ["temperature"],
+    "variable": ["temperature" "specific_cloud_liquid_water_content"],
     "year": "1988",
     "month": [
         "01", "02", "03",
