@@ -1,5 +1,6 @@
 import cdsapi
 
+# define dataset and request
 dataset = "derived-era5-pressure-levels-daily-statistics"
 request = {
     "product_type": "reanalysis",
@@ -31,5 +32,12 @@ request = {
     "area": [50, -126, 24, -65]
 }
 
+# output file name
+filename = "rough_CONUS_precipitation_temperature_1988.nc" 
+
+# initialize client, fetch dataset
 client = cdsapi.Client()
-client.retrieve(dataset, request).download()
+result = client.retrieve(dataset, request)
+
+# download and save as custom name
+client.download(result, [filename])
