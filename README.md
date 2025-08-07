@@ -18,7 +18,7 @@ Each dataset has been analyzed in the following way:
    - For data on single levels, "2m temperature" and "Total Precipitation" were the variables analyzed.
    - For data on pressure levels, "Specific cloud liquid water content" (CLWC) and "Temperature" were variables analyzed on the first pressure level (1 hPa).
 2. Preprocessed
-   - Due to rate limits and size requirements, it was necessary in some instances to download the data separate and then merge it using xarray's built in merge function.
+   - Due to rate limits and size requirements, it was necessary in some instances to download the data separately and then merge it using xarray's built-in merge function.
    - The dataset was then clipped to fit the continental United States using GeoPandas ([shapefile downloaded from the US Census](https://www.census.gov/geographies/mapping-files/time-series/geo/cartographic-boundary.html)).
 3. Annual Average
     - A heatmap was generated and saved, representing the variation of each variable across the United States.
