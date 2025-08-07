@@ -34,7 +34,7 @@ request = {
 }
 
 # output file name
-filename = "rough_CONUS_precipitation_clwc_1988.nc" 
+filename = "rough_CONUS_pressure_clwc_1988.nc" 
 
 # initialize client, fetch dataset
 client = cdsapi.Client()
