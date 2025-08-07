@@ -43,7 +43,7 @@ You can access the direct links to the plots here:
 - [ERA5 monthly averaged data on pressure levels from 1940 to present](https://github.com/milhud/ESMDownscalingTask/tree/main/ERA5_monthly_statistics_pressure_1988/plots)
 - [ERA5 monthly averaged data on single levels from 1940 to present](https://github.com/milhud/ESMDownscalingTask/tree/main/ERA5_monthly_statistics_single_1988/plots)
 - [ERA5 hourly data on pressure levels from 1940 to present](https://github.com/milhud/ESMDownscalingTask/tree/main/ERA5_hourly_statistics_pressure_1988/plots)
-- [ERA5 hourly data on single levels from 1940 to present](https://github.com/milhud/ESMDownscalingTask/tree/main/ERA5_hourly_statistics_single_1988/plots9)
+- [ERA5 hourly data on single levels from 1940 to present](https://github.com/milhud/ESMDownscalingTask/tree/main/ERA5_hourly_statistics_single_1988/plots)
 
 (Note: some plots ostensibly appear to be lacking data, though it is because at the first pressure level, there is very little liquid water in the clouds; a reanalysis at different pressure levels may be in order.)
 
