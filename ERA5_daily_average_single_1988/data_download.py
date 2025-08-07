@@ -31,7 +31,7 @@ request = {
 }
 
 # output file name
-filename = "derived-era5-single-levels-daily-statistics_1988_temperature.nc" 
+filename = "rough_CONUS_daily_single_temperature.nc" 
 
 # initialize client, fetch dataset
 client = cdsapi.Client()

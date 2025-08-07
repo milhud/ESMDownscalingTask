@@ -3,7 +3,7 @@ import cdsapi
 dataset = "reanalysis-era5-single-levels"
 request = {
     "product_type": ["reanalysis"],
-    "variable": ["total_precipitation"],
+    "variable": ["2m_temperature"],
     "year": ["1988"],
     "month": [
         "01", "02", "03",
@@ -25,15 +25,16 @@ request = {
         "31"
     ],
     "time": [
-        "00:00", "06:00", "12:00",
-        "18:00"
+        "0:00", "06:00",        
+        "12:00", "18:00"
     ],
     "data_format": "netcdf",
+    "area": [50, -126, 24, -65],
     "download_format": "unarchived"
 }
 
 # output file name
-filename = "rough_CONUS_hourly_tp_1988.nc" 
+filename = "rough_CONUS_hourly_t2m_1988.nc" 
 
 # initialize client, fetch dataset
 client = cdsapi.Client()

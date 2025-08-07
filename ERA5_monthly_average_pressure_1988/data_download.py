@@ -1,7 +1,6 @@
 import cdsapi
 
 # define dataset and request
-dataset = "derived-era5-pressure-levels-daily-statistics"
 dataset = "reanalysis-era5-pressure-levels-monthly-means"
 request = {
     "product_type": ["monthly_averaged_reanalysis"],
@@ -21,7 +20,7 @@ request = {
 }
 
 # output file name
-filename = "rough_CONUS_temperature_1988.nc" 
+filename = "rough_CONUS_monthly_pressure_temperature_1988.nc" 
 
 # initialize client, fetch dataset
 client = cdsapi.Client()
