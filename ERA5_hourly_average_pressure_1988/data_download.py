@@ -3,7 +3,7 @@ import cdsapi
 dataset = "reanalysis-era5-pressure-levels"
 request = {
     "product_type": ["reanalysis"],
-    "variable": ["temperature"],
+    "variable": ["specific_cloud_liquid_water_content"],
     "year": ["1988"],
     "month": [
         "01", "02", "03",
@@ -35,7 +35,7 @@ request = {
 }
 
 # output file name
-filename = "rough_CONUS_hourly_temperature_1988.nc" 
+filename = "rough_CONUS_hourly_clwc_1988.nc" 
 
 # initialize client, fetch dataset
 client = cdsapi.Client()

@@ -3,7 +3,7 @@ import cdsapi
 dataset = "derived-era5-single-levels-daily-statistics"
 request = {
     "product_type": "reanalysis",
-    "variable": ["2m_temperature"],
+    "variable": ["total_precipitation"],
     "year": "1988",
     "month": [
         "01", "02", "03",
@@ -31,7 +31,7 @@ request = {
 }
 
 # output file name
-filename = "rough_CONUS_daily_single_temperature.nc" 
+filename = "rough_CONUS_daily_single_precipitation_1988.nc" 
 
 # initialize client, fetch dataset
 client = cdsapi.Client()
